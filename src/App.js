@@ -5,10 +5,10 @@ import './App.css'
 
 function Index() {
   let photos = []
-  for (let i = 0; i <= 4; i++) {
+  for (let i = 1; i <= 75; i++) {
     photos.push(
       <Link to={`/photos/${i}`} key={i} className='FlexItem' >
-        <img src={`./images/thumbnails/${i}_tn.jpg`} height={300} width={300} alt={''} />
+        <img src={`./images/thumbnails/tako (${i})_tn.jpg`} height={300} width={300} alt={''} />
       </Link>
     )
   }
@@ -24,7 +24,7 @@ function Photos({ match }) {
   const { params: id } = match
   return (
     <div className='App'>
-      <img src={`${window.location.origin}/images/photos/${id.id}.jpg`} alt={''} />
+      <img src={`${window.location.origin}/images/photos/tako (${id.id}).jpg`} alt={''} />
     </div>
   )
 }
