@@ -7,8 +7,8 @@ function Index() {
   let photos = []
   for (let i = 0; i <= 4; i++) {
     photos.push(
-      <Link to={`/photos/${i}`} key={i} className='FlexItem' target='_blank' >
-        <img src={`./thumbnails/${i}_tn.jpg`} height={300} width={300} alt={''} />
+      <Link to={`/photos/${i}`} key={i} className='FlexItem' >
+        <img src={`./images/thumbnails/${i}_tn.jpg`} height={300} width={300} alt={''} />
       </Link>
     )
   }
@@ -22,10 +22,9 @@ function Index() {
 
 function Photos({ match }) {
   const { params: id } = match
-  console.log(id.id)
   return (
     <div className='App'>
-      <img src={`../images/${id.id}.jpg`} alt={''} />
+      <img src={`${window.location.origin}/images/photos/${id.id}.jpg`} alt={''} />
     </div>
   )
 }

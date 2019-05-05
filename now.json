@@ -1,4 +1,5 @@
 {
   "version": 2,
-  "alias": "www.lostinotter.space"
+  "alias": "www.lostinotter.space",
+  "routes": [{ "src": "/*", "dest": "index.html" }]
 }
