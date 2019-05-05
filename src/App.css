@@ -1,3 +1,6 @@
+
+* {background-color: #282c34 }
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -15,4 +18,10 @@
 .FlexItem {
   flex: 69 49 auto;
   margin: 22px;
+}
+
+.MaxWidth {
+  width: 70vw;  
+  min-height: 700px;
+  min-width: 700px;
 }
