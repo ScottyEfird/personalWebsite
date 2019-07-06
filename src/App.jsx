@@ -19,26 +19,41 @@ const Header = () => (
   </div>
 )
 
-const ExperienceContent = ({ job, updateButton, buttons }) => (
-  <div className={'Dummy'}>
-    <div className={'ExperienceWrapper'}>
-      <a href={job.url} target='_blank' rel='noopener noreferrer' className={'ExperienceHeader'}>
-        <img src={`${window.location.origin}/images/risksense.png`} height={100} alt={job.title} />
-      </a>
-      <div className={'ExperienceBody'}>
-        <span>{job.jobTitle}</span>
-        <span>{job.dateToFrom}</span>
-      </div>
-      <div style={{width: 100, height: 100, background: 'blue'}} onClick={() => updateButton(job.title)} />
-      {buttons.find(x => x.title === job.title).isOpen && (
-        <div>
-          hello!!
-        </div>
-      )
-      }
-    </div>
-  </div>
+const ExperianceRow = ({experianceData}) => (
+  <React.Fragment>
+    <hr />
+    {experianceData.map(row => (
+      <div className='ExperianceRow' key={row}>{row}</div>
+    ))}
+  </React.Fragment>
 )
+
+const ExperienceContent = ({ job, updateButton, buttons }) => {
+  const isButtonOpen  = buttons.find(x => x.title === job.title).isOpen
+  return (
+    <div className={'Dummy'}>
+      <div className={'ExperienceContentWrapper'}>
+        <div className={'button'}>
+          <img
+            src={`${window.location.origin}/images/icons/${isButtonOpen ? 'arrow-down' : 'arrow-right'}.png`}
+            height={60}
+            onClick={() => updateButton(job.title)}
+            alt={job.title} />
+        </div>
+        <div className={'ExperienceWrapper'}>
+          <a href={job.url} target='_blank' rel='noopener noreferrer' className={'ExperienceHeader'}>
+            <img src={`${window.location.origin}/images/risksense.png`} height={100} alt={job.title} />
+          </a>
+          <div className={'ExperienceBody'}>
+            <span>{job.jobTitle}</span>
+            <span>{job.dateToFrom}</span>
+          </div>
+          {isButtonOpen && <ExperianceRow experianceData={job.experianceData} />}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 class AppBody extends React.Component {
   constructor(props) {

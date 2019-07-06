@@ -35,10 +35,22 @@
   width: 600px;
 }
 
+.ExperienceContentWrapper {   
+  display: flex;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+	
+  padding: 10px;
+  
+}
+
 .ExperienceHeader {
   color: var(--textColor);
   font-size: 18px;
-  }
+}
 
 .ExperienceBody {
   color: var(--textColor);
@@ -46,7 +58,13 @@
 
   display: flex;
 	flex-direction: column;
-  }
+}
+
+.ExperianceRow {
+  color: var(--textColor);
+  font-size: 14px;
+  padding-left: 20px;
+}
 
 
 .Dummy {

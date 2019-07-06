@@ -15,8 +15,12 @@
  * Hosted using Zeit via now. `zeit.co`
  * Node, NPM and Yarn are required installs.
  
+### Manually aliasing a domain name
+ * `now` Outputs a build as `https://build-xyz@abc.now.sh`
+ * `now alias https://build-9botg0ntw.now.sh scottyefird.com`
+ 
 ### Domain Name
  * Use `now domains ls` to check domain for usable domain names.
  * You might need to `move` the domain to your GitHub account. 
  * `['LostInOtter.space', 'scottyefird.com']`
- * `now alias <personalwebsite-xyz123.now.sh> lostinotter.space`
+ 
