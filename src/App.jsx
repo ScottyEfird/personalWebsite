@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react"
-import { RiskSense } from './Experience.jsx'
+import { RiskSense, Coolfire, Frii } from './Experience.jsx'
 import './App.css'
 
 const Header = () => (
@@ -23,7 +23,7 @@ const ExperianceRow = ({experianceData}) => (
   <React.Fragment>
     <hr />
     {experianceData.map(row => (
-      <div className='ExperianceRow' key={row}>{row}</div>
+      <div className='ExperianceRow' key={row}>{`- ${row}`}</div>
     ))}
   </React.Fragment>
 )
@@ -42,7 +42,7 @@ const ExperienceContent = ({ job, updateButton, buttons }) => {
         </div>
         <div className={'ExperienceWrapper'}>
           <a href={job.url} target='_blank' rel='noopener noreferrer' className={'ExperienceHeader'}>
-            <img src={`${window.location.origin}/images/risksense.png`} height={100} alt={job.title} />
+            <img src={`${window.location.origin}/images/${job.logo}`} height={100} alt={job.title} />
           </a>
           <div className={'ExperienceBody'}>
             <span>{job.jobTitle}</span>
@@ -60,14 +60,14 @@ class AppBody extends React.Component {
     super(props)
     this.updateButton = this.updateButton.bind(this)
     this.state = {
-      // Title is used as the button id.
+      // Title is used as the button id, TODO change
       buttons: [
-        { title: 'RiskSense', isOpen: false }
+        { title: 'RiskSense', isOpen: false },
+        { title: 'Coolfire', isOpen: false },
+        { title: 'Frii', isOpen: false },
       ]
     }
   }
-
-  //https://codeburst.io/animating-react-components-with-css-and-styled-components-cc5a0585f105
 
   updateButton (title) {
     this.setState(prevState => ({
@@ -82,6 +82,8 @@ class AppBody extends React.Component {
       <div className='AppBody'>
         <Header style={{paddingTop: 15}} />
         <ExperienceContent job={RiskSense} updateButton={this.updateButton} buttons={this.state.buttons} />
+        <ExperienceContent job={Coolfire} updateButton={this.updateButton} buttons={this.state.buttons} />
+        <ExperienceContent job={Frii} updateButton={this.updateButton} buttons={this.state.buttons} />
       </div>
     )
   }
