@@ -1,5 +1,8 @@
+import { JobKeys } from './utilities.jsx'
+
 export const RiskSense = {
   title: 'RiskSense',
+  key: JobKeys.RISKSENSE,
   jobTitle: 'Frontend Software Engineer',
   location: 'Albuquerque, NM',
   dateToFrom: 'June 2018 - Current',
@@ -16,6 +19,7 @@ export const RiskSense = {
 
 export const Coolfire = {
   title: 'Coolfire',
+  key: JobKeys.COOLFIRE,
   jobTitle: 'Frontend Software Engineer',
   location: 'St. Louis, MO',
   dateToFrom: 'July 2016 - June 2018',
@@ -33,6 +37,7 @@ export const Coolfire = {
 
 export const Frii = {
   title: 'Frii',
+  key: JobKeys.FRII,
   jobTitle: 'NOC Engineer - Intern',
   location: 'Fort Collins, CO',
   dateToFrom: 'Summer of 2015',
