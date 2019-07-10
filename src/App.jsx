@@ -68,10 +68,7 @@ class AppBody extends React.Component {
     this.state = {
       // Title is used as the button id, TODO change
       buttons: [
-        { title: 'RiskSense', isOpen: false },
-        { title: 'Coolfire', isOpen: false },
-        { title: 'Frii', isOpen: false },
-        { title: 'Github', isOpen: false },
+        { title: 'RiskSense', isOpen: false }
       ]
     }
   }
