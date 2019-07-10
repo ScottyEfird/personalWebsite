@@ -37,13 +37,15 @@
 
 .ExperienceContentWrapper {   
   display: flex;
+  padding: 10px;
 }
 
 .button {
   display: flex;
   justify-content: center;
-	
-  padding: 10px;
+  cursor: pointer;
+  margin-top: 23px;
+  padding-right: 10px;
   
 }
 
@@ -56,6 +58,7 @@
   color: var(--textColor);
   font-size: 16px;
 
+  padding-top: 10px;
   display: flex;
 	flex-direction: column;
 }
@@ -64,6 +67,8 @@
   color: var(--textColor);
   font-size: 14px;
   padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 
