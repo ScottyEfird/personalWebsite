@@ -5,33 +5,23 @@ import { isButtonOpen, JobKeys } from '../Utils/utilities.jsx'
 import './App.css'
 
 const Header = ({ updateButton, buttons }) => (
-  <div className={'Dummy'}>
-    <div className={'ElementWrapper'}>
-      <div className={'Title'}>
+  <div className='Dummy'>
+    <div className='ElementWrapper'>
+      <div className='Title'>
         Scotty Efird
       </div>
+      <div className='Subtile'>
+        Frontend Software Engineer
+      </div>
       <hr />
-      <div className={'Subtitle'}>
+      <div className='ContactInfo'>
         <span>Scottyefird@gmail.com</span>
         <span>(910) 603-6186</span>
         <span>Albuquerque, NM</span>
       </div>
-      <div className={'Subtitle'} style={{ paddingTop: 15 }} >
-        <span>
-          <img
-            src={`${window.location.origin}/images/icons/${isButtonOpen(buttons, JobKeys.GITHUB) ? 'arrow-down' : 'arrow-right'}.png`}
-            height={20}
-            onClick={() => updateButton(JobKeys.GITHUB)}
-            alt={'Github button'} />
-          Github
-        </span>
-        {
-          isButtonOpen(buttons, JobKeys.GITHUB) && (
-            <React.Fragment>
-              stuff
-            </React.Fragment>
-          )
-        }
+      <div className='ContactInfo' style={{ paddingTop: 15 }} >
+        <div>
+          Fork this website <a href="https://github.com/ScottyEfird/personalWebsite"><i>here</i></a> or check out another cool <a href="https://github.com/ScottyEfird/Notes"><i>project</i></a>        </div>
       </div>
     </div>
   </div>
@@ -47,26 +37,41 @@ const ExperianceRow = ({ experianceData }) => (
 )
 
 const ExperienceContent = ({ job, updateButton, buttons }) => (
-  <div className={'Dummy'}>
-    <div className={'ExperienceContentWrapper'}>
-      <div className={'button'}>
+  <div className='Dummy'>
+    <div className='ExperienceContentWrapper'>
+      <div className='button'>
         <img
           src={`${window.location.origin}/images/icons/${isButtonOpen(buttons, job.key) ? 'arrow-down' : 'arrow-right'}.png`}
           height={60}
           onClick={() => updateButton(job.key)}
           alt={job.title} />
       </div>
-      <div className={'ExperienceWrapper'}>
-        <a href={job.url} target='_blank' rel='noopener noreferrer' className={'ExperienceHeader'}>
+      <div className='ExperienceWrapper'>
+        <a href={job.url} target='_blank' rel='noopener noreferrer' className='ExperienceHeader'>
           <img src={`${window.location.origin}/images/${job.logo}`} height={100} alt={job.title} />
         </a>
-        <div className={'ExperienceBody'}>
+        <div className='ExperienceBody'>
           <span>{job.jobTitle}</span>
           <span>{job.dateToFrom}</span>
         </div>
         {isButtonOpen(buttons, job.key) && <ExperianceRow experianceData={job.experianceData} />}
       </div>
     </div>
+  </div>
+)
+
+const SkillBox = () => (
+  <div className='Skillbox'>
+    <div>
+      Skills, Preferences and Tools
+    </div>
+    <ul>
+      <li>Bachelors in Science, Computer Science from the University of Wyoming</li>
+      <li>VSCode as my editor of choice with ESLint, React DevTools and Chrome DevTools</li>
+      <li>Unit testing using Jest and Mocha and run time type checking using Flow</li>
+      <li>Agile or Kanban developer working enviroment</li>
+      <li>The rank of Eagle Scout - Boy Scouts of America</li>
+    </ul>
   </div>
 )
 
@@ -94,13 +99,20 @@ class AppBody extends React.Component {
     }))
   }
 
+
+
   render() {
     return (
       <div className='AppBody'>
-        <Header updateButton={this.updateButton} buttons={this.state.buttons} />
-        <ExperienceContent job={RiskSense} updateButton={this.updateButton} buttons={this.state.buttons} />
-        <ExperienceContent job={Coolfire} updateButton={this.updateButton} buttons={this.state.buttons} />
-        <ExperienceContent job={Frii} updateButton={this.updateButton} buttons={this.state.buttons} />
+        <div className='AppWrapper'>
+          <Header updateButton={this.updateButton} buttons={this.state.buttons} />
+          <hr />
+          <ExperienceContent job={RiskSense} updateButton={this.updateButton} buttons={this.state.buttons} />
+          <ExperienceContent job={Coolfire} updateButton={this.updateButton} buttons={this.state.buttons} />
+          <ExperienceContent job={Frii} updateButton={this.updateButton} buttons={this.state.buttons} />
+          <hr />
+          <SkillBox />
+        </div>
       </div>
     )
   }

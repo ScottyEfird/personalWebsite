@@ -1,34 +1,56 @@
 
-* {background-color: #282c34 }
+* { 
+  background-color: #282c34;  
+  font-family: "Helvetica Neue", "Helvetica", "Arial"
+}
 
 :root {
   --textColor: white;
+  --forgroundColor: tan;
 }
 
 .AppBody {
   display: flex;
-  flex-direction: column;
+  padding-left: 20%;
   align-content: center;
   align-items: center;
 
   min-height: 700px;
   min-width: 700px;
+
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+
+.AppWrapper {
+  border-style: solid;
+  border-width: 3px;
+  border-color: blue;
 }
 
 .Title {
   color: var(--textColor);
-  font-size: 48px;
+  text-transform: uppercase;
+  font-size: 42px;
   padding-bottom: 16px;
 }
 
-.Subtitle {
+.Subtile {
+  color: var(--textColor);
+  font-size: 26px;
+  padding-bottom: 16px;
+}
+
+.ContactInfo {
   color: var(--textColor);
   font-size: 18px;
   
   display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	align-content: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .ExperienceWrapper {
@@ -71,6 +93,12 @@
   padding-bottom: 3px;
 }
 
+.Skillbox {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--textColor);
+}
+
 
 .Dummy {
   border-style: solid;
@@ -80,5 +108,5 @@
 
 .ElementWrapper {
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 30px;
 }
