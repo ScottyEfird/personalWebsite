@@ -5,23 +5,26 @@ import { isButtonOpen, JobKeys } from '../Utils/utilities.jsx'
 import './App.css'
 
 const Header = ({ updateButton, buttons }) => (
-  <div className='Dummy'>
-    <div className='ElementWrapper'>
-      <div className='Title'>
-        Scotty Efird
+  <div className='ElementWrapper'>
+    <div className='Title'>
+      Scotty Efird
       </div>
-      <div className='Subtile'>
-        Frontend Software Engineer
+    <div className='Subtile'>
+      Front End Software Engineer
       </div>
-      <hr />
-      <div className='ContactInfo'>
-        <span>Scottyefird@gmail.com</span>
-        <span>(910) 603-6186</span>
-        <span>Albuquerque, NM</span>
-      </div>
-      <div className='ContactInfo' style={{ paddingTop: 15 }} >
-        <div>
-          Fork this website <a href="https://github.com/ScottyEfird/personalWebsite"><i>here</i></a> or check out another cool <a href="https://github.com/ScottyEfird/Notes"><i>project</i></a>        </div>
+    <hr className="hr" />
+    <div className='ContactInfo'>
+      <span><span role="img" aria-label='email'>📧</span> Scottyefird@gmail.com</span>
+      <span><span role="img" aria-label='phone'>📱&nbsp;</span>  (910) 603-6186</span>
+      <span><span role="img" aria-label='pin'>📌</span>Albuquerque, NM</span>
+      <span><span role="img" aria-label='hat'>🎓</span> BS Computer Science - University of Wyoming</span>
+    </div>
+    <div className='ContactInfo' style={{ paddingTop: 15 }} >
+      <div>
+        Fork this website
+        <a className='Link' href="https://github.com/ScottyEfird/personalWebsite"><i> here </i></a>
+        or check out another cool
+        <a className='Link' href="https://github.com/ScottyEfird/Notes"><i> project </i></a>
       </div>
     </div>
   </div>
@@ -29,7 +32,7 @@ const Header = ({ updateButton, buttons }) => (
 
 const ExperianceRow = ({ experianceData }) => (
   <React.Fragment>
-    <hr />
+    <hr className="hr" />
     {experianceData.map(row => (
       <div className='ExperianceRow' key={row}>{`- ${row}`}</div>
     ))}
@@ -37,25 +40,23 @@ const ExperianceRow = ({ experianceData }) => (
 )
 
 const ExperienceContent = ({ job, updateButton, buttons }) => (
-  <div className='Dummy'>
-    <div className='ExperienceContentWrapper'>
-      <div className='button'>
-        <img
-          src={`${window.location.origin}/images/icons/${isButtonOpen(buttons, job.key) ? 'arrow-down' : 'arrow-right'}.png`}
-          height={60}
-          onClick={() => updateButton(job.key)}
-          alt={job.title} />
+  <div className='ExperienceContentWrapper'>
+    <div className='Button'>
+      <img
+        src={`${window.location.origin}/images/icons/${isButtonOpen(buttons, job.key) ? 'arrow-down' : 'arrow-right'}.png`}
+        height={60}
+        onClick={() => updateButton(job.key)}
+        alt={job.title} />
+    </div>
+    <div className='ExperienceWrapper'>
+      <a href={job.url} target='_blank' rel='noopener noreferrer' className='ExperienceHeader'>
+        <img src={`${window.location.origin}/images/${job.logo}`} height={100} alt={job.title} />
+      </a>
+      <div className='ExperienceBody'>
+        <span>{job.jobTitle}</span>
+        <span>{job.dateToFrom}</span>
       </div>
-      <div className='ExperienceWrapper'>
-        <a href={job.url} target='_blank' rel='noopener noreferrer' className='ExperienceHeader'>
-          <img src={`${window.location.origin}/images/${job.logo}`} height={100} alt={job.title} />
-        </a>
-        <div className='ExperienceBody'>
-          <span>{job.jobTitle}</span>
-          <span>{job.dateToFrom}</span>
-        </div>
-        {isButtonOpen(buttons, job.key) && <ExperianceRow experianceData={job.experianceData} />}
-      </div>
+      {isButtonOpen(buttons, job.key) && <ExperianceRow experianceData={job.experianceData} />}
     </div>
   </div>
 )
@@ -66,11 +67,10 @@ const SkillBox = () => (
       Skills, Preferences and Tools
     </div>
     <ul>
-      <li>Bachelors in Science, Computer Science from the University of Wyoming</li>
-      <li>VSCode as my editor of choice with ESLint, React DevTools and Chrome DevTools</li>
-      <li>Unit testing using Jest and Mocha and run time type checking using Flow</li>
-      <li>Agile or Kanban developer working enviroment</li>
-      <li>The rank of Eagle Scout - Boy Scouts of America</li>
+      <li>VSCode with ESLint and Chrome using React DevTools</li>
+      <li>Unit testing with Jest, Mocha and Flow</li>
+      <li>Agile working enviroment</li>
+      <li>Eagle Scout - Boy Scouts of America</li>
     </ul>
   </div>
 )
@@ -104,13 +104,13 @@ class AppBody extends React.Component {
   render() {
     return (
       <div className='AppBody'>
-        <div className='AppWrapper'>
+        <div>
           <Header updateButton={this.updateButton} buttons={this.state.buttons} />
-          <hr />
+          <hr className="hr" />
           <ExperienceContent job={RiskSense} updateButton={this.updateButton} buttons={this.state.buttons} />
           <ExperienceContent job={Coolfire} updateButton={this.updateButton} buttons={this.state.buttons} />
           <ExperienceContent job={Frii} updateButton={this.updateButton} buttons={this.state.buttons} />
-          <hr />
+          <hr className="hr" />
           <SkillBox />
         </div>
       </div>

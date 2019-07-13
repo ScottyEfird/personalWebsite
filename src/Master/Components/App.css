@@ -1,12 +1,14 @@
+:root {
+  --darkBlue: #1C3144;
+  --wintergreenDream: #488286;
+  --paleAqua: #B7D5D4;
 
-* { 
-  background-color: #282c34;  
-  font-family: "Helvetica Neue", "Helvetica", "Arial"
+  --textSize: 18px;
 }
 
-:root {
-  --textColor: white;
-  --forgroundColor: tan;
+* { 
+  background-color: var(--darkBlue);
+  font-family: "Helvetica Neue", "Helvetica", "Arial"
 }
 
 .AppBody {
@@ -17,34 +19,29 @@
 
   min-height: 700px;
   min-width: 700px;
-
-  border-style: solid;
-  border-width: 3px;
-  border-color: red;
 }
 
-.AppWrapper {
-  border-style: solid;
-  border-width: 3px;
-  border-color: blue;
+.hr {
+  border-color: var(--wintergreenDream);
 }
 
 .Title {
-  color: var(--textColor);
+  color: var(--wintergreenDream);
   text-transform: uppercase;
   font-size: 42px;
+  padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .Subtile {
-  color: var(--textColor);
+  color: var(--paleAqua);
   font-size: 26px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
 .ContactInfo {
-  color: var(--textColor);
-  font-size: 18px;
+  color: var(--paleAqua);
+  font-size: var(--textSize);
   
   display: flex;
 	flex-direction: column;
@@ -57,28 +54,22 @@
   width: 600px;
 }
 
-.ExperienceContentWrapper {   
-  display: flex;
-  padding: 10px;
-}
-
-.button {
+.Button {
   display: flex;
   justify-content: center;
   cursor: pointer;
   margin-top: 23px;
-  padding-right: 10px;
-  
+  padding-right: 10px;  
 }
 
 .ExperienceHeader {
-  color: var(--textColor);
-  font-size: 18px;
+  color: var(--paleAqua);
+  font-size: var(--textSize);
 }
 
 .ExperienceBody {
-  color: var(--textColor);
-  font-size: 16px;
+  color: var(--paleAqua);
+  font-size: var(--textSize);
 
   padding-top: 10px;
   display: flex;
@@ -86,8 +77,8 @@
 }
 
 .ExperianceRow {
-  color: var(--textColor);
-  font-size: 14px;
+  color: var(--paleAqua);
+  font-size: var(--textSize);
   padding-left: 20px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -96,17 +87,25 @@
 .Skillbox {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: var(--textColor);
+  font-size: var(--textSize);
+  color: var(--paleAqua);
 }
 
+.Skillbox ul li {
+  padding: 3px;
+}
 
-.Dummy {
-  border-style: solid;
-  border-width: 3px;
-  border-color: green;
+.Link {
+  color: var(--wintergreenDream);
+  text-decoration: none;
+}
+
+.ExperienceContentWrapper {   
+  display: flex;
+  padding: 10px;
 }
 
 .ElementWrapper {
   padding-top: 12px;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
 }
