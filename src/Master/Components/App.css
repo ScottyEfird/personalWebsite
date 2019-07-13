@@ -4,6 +4,7 @@
   --paleAqua: #B7D5D4;
 
   --textSize: 18px;
+  --subtextSize: 26px;
 }
 
 * { 
@@ -35,7 +36,7 @@
 
 .Subtile {
   color: var(--paleAqua);
-  font-size: 26px;
+  font-size: var(--subtextSize);
   padding-bottom: 12px;
 }
 

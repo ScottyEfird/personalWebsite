@@ -21,10 +21,14 @@ const Header = ({ updateButton, buttons }) => (
     </div>
     <div className='ContactInfo' style={{ paddingTop: 15 }} >
       <div>
-        Fork this website
-        <a className='Link' href="https://github.com/ScottyEfird/personalWebsite"><i> here </i></a>
-        or check out another cool
-        <a className='Link' href="https://github.com/ScottyEfird/Notes"><i> project </i></a>
+        Checkout my
+        <a
+          className='Link'
+          href="https://github.com/ScottyEfird/personalWebsite"
+          target='_blank'
+          rel='noopener noreferrer'
+        ><i> Github </i></a>
+
       </div>
     </div>
   </div>
@@ -53,7 +57,7 @@ const ExperienceContent = ({ job, updateButton, buttons }) => (
         <img src={`${window.location.origin}/images/${job.logo}`} height={100} alt={job.title} />
       </a>
       <div className='ExperienceBody'>
-        <span>{job.jobTitle}</span>
+        <span className='Subtile'>{job.jobTitle}</span>
         <span>{job.dateToFrom}</span>
       </div>
       {isButtonOpen(buttons, job.key) && <ExperianceRow experianceData={job.experianceData} />}
