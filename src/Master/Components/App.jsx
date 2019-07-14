@@ -75,6 +75,7 @@ const SkillBox = () => (
       <li>Unit testing with Jest, Mocha and Flow</li>
       <li>Agile working enviroment</li>
       <li>Eagle Scout - Boy Scouts of America</li>
+      <li>Grab a copy of my resume <a className='Link' href={`${window.location.origin}/downloads/ScottyEfirdResume.pdf`} download>here</a></li>
     </ul>
   </div>
 )
