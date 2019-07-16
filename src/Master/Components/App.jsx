@@ -21,7 +21,7 @@ const Header = ({ updateButton, buttons }) => (
     </div>
     <div className='ContactInfo' style={{ paddingTop: 15 }} >
       <div>
-        Checkout my
+        Check out my
         <a
           className='Link'
           href="https://github.com/ScottyEfird/personalWebsite"

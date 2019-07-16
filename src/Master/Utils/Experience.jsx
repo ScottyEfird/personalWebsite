@@ -13,7 +13,7 @@ export const RiskSense = {
     'Responsible for the planning, architecting and delivering of software',
     'Refactored several large legacy systems to a modern ES6 architecture',
     'Helped lead the onboarding and training of an offshore front end development team',
-    'Predominately worked with large data sets containing 100k+ entities per table',
+    'Predominantly worked with large data sets containing 100k+ entities per table',
   ]
 }
 
