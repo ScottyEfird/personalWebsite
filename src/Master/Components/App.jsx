@@ -80,7 +80,6 @@ const SkillBox = () => (
   </div>
 )
 
-
 class AppBody extends React.Component {
   constructor(props) {
     super(props)
@@ -95,7 +94,6 @@ class AppBody extends React.Component {
     }
   }
 
-
   updateButton(key) {
     this.setState(prevState => ({
       buttons: prevState.buttons.map(
@@ -103,8 +101,6 @@ class AppBody extends React.Component {
       )
     }))
   }
-
-
 
   render() {
     return (
