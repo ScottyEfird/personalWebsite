@@ -1,15 +1,15 @@
 :root {
-  --darkBlue: #1C3144;
+  --darkBlue: #1c3144;
   --wintergreenDream: #488286;
-  --paleAqua: #B7D5D4;
+  --paleAqua: #b7d5d4;
 
   --textSize: 18px;
   --subtextSize: 26px;
 }
 
-* { 
+* {
   background-color: var(--darkBlue);
-  font-family: "Helvetica Neue", "Helvetica", "Arial"
+  font-family: "Helvetica Neue", "Helvetica", "Arial";
 }
 
 .AppBody {
@@ -43,10 +43,10 @@
 .ContactInfo {
   color: var(--paleAqua);
   font-size: var(--textSize);
-  
+
   display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   align-content: center;
   justify-content: center;
 }
@@ -60,7 +60,7 @@
   justify-content: center;
   cursor: pointer;
   margin-top: 23px;
-  padding-right: 10px;  
+  padding-right: 10px;
 }
 
 .ExperienceHeader {
@@ -74,7 +74,7 @@
 
   padding-top: 10px;
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
 }
 
 .ExperianceRow {
@@ -101,7 +101,7 @@
   text-decoration: none;
 }
 
-.ExperienceContentWrapper {   
+.ExperienceContentWrapper {
   display: flex;
   padding: 10px;
 }

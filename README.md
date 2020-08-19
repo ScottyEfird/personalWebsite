@@ -2,7 +2,7 @@
 
 You've found the source code of my personal website
 
-Build with [React](https://reactjs.org/) and is designed as a quick and easy way for you to get to know me.
+Build with [React](https://reactjs.org/) and is designed as a quick and easy way for you to get to know me
 
 ## Helpful Documentation for Great Good
 
