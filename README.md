@@ -1,16 +1,31 @@
-# Helpful Documentation for Great Good
+# www.scottyefird.com
 
-## Requirements
+This is the source code of my personal website.
+
+// TODO tell a story
+
+## Helpful Documentation for Great Good
+
+### Requirements
 
 - NodeJs `https://nodejs.org/en/`
 - Vercel (For hosting and deployment) `https://vercel.com/download`
 
-## Building, Running and Deploying
+## Build Setup
 
-- `npm i` To install dependencies
-- `npm run start` to launch the server to `http://localhost:3000`
-- `npm run build` to build locally
-- `npm run deploy` builds and deploys to prod via Vercel
+```bash
+# install dependencies
+$ npm install
+
+# server with hot reload at `http://localhost:3000`
+$ npm run dev
+
+# build for production
+$ npm run build
+
+# deploy to production via Vercel
+$ npm run deploy
+```
 
 ## Vercel Specific Documentation
 
