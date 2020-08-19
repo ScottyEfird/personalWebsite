@@ -1,8 +1,8 @@
 # www.scottyefird.com
 
-This is the source code of my personal website.
+You've found the source code of my personal website
 
-// TODO tell a story
+Build with [React](https://reactjs.org/) and is designed as a quick and easy way for you to get to know me.
 
 ## Helpful Documentation for Great Good
 
