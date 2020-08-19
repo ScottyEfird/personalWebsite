@@ -1,5 +1,4 @@
 {
   "version": 2,
-  "alias": "www.scottyefird.com",
   "routes": [{ "src": "/*", "dest": "index.html" }]
 }

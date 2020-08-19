@@ -10,7 +10,7 @@
 - `npm i` To install dependencies
 - `npm run start` to launch the server to `http://localhost:3000`
 - `npm run build` to build locally
-<!-- - `yarn deploy` to deploy to `scottyefird.com`. -->
+- `npm run deploy` builds and deploys to prod via Vercel
 
 ## Vercel Specific Documentation
 
