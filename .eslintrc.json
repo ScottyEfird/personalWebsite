@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "curly": "error",
+    "linebreak-style": [2, "unix"],
+    "semi": [2],
+    "no-mixed-spaces-and-tabs": [0, "smart-tabs"],
+    "no-unused-vars": [2, { "vars": "local" }],
+    "comma-dangle": [0],
+    "react/prop-types": [2, { "ignore": ["children", "className"] }],
+    "react/no-deprecated": [0],
+    "react-hooks/rules-of-hooks": "error"
+  },
+  "plugins": ["react", "react-hooks"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "TENANT_CONFIG": true
+  }
+}
