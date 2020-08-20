@@ -28,4 +28,16 @@
       "last 1 safari version"
     ]
   }
+  "description": "You've found the source code of my personal website",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottyEfird/personalWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottyEfird/personalWebsite/issues"
+  },
+  "homepage": "https://github.com/ScottyEfird/personalWebsite#readme"
 }
