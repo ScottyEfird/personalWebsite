@@ -1,6 +1,17 @@
 {
   "name": "scotty-efird-personal-website",
+  "description": "You've found the source code of my personal website",
   "version": "2.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottyEfird/personalWebsite.git"
+  },
+  "author": "Scotty Efird",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottyEfird/personalWebsite/issues"
+  },
   "private": false,
   "dependencies": {
     "react": "^16.8.6",
@@ -28,16 +39,4 @@
       "last 1 safari version"
     ]
   }
-  "description": "You've found the source code of my personal website",
-  "main": ".eslintrc.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ScottyEfird/personalWebsite.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ScottyEfird/personalWebsite/issues"
-  },
-  "homepage": "https://github.com/ScottyEfird/personalWebsite#readme"
 }
