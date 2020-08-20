@@ -1,0 +1,30 @@
+.headerWrapper {
+  background-color: salmon;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > * + * {
+    margin-top: 8px;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.contactInfo {
+  a {
+    color: unset;
+    text-decoration: unset;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
