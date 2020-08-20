@@ -87,6 +87,7 @@ class Header extends Component {
             {trackLastPlayedTime}
             <a
               target="_blank"
+              rel="noreferrer"
               href={`//www.youtube.com/results?search_query='${trackTitle} ${trackArtist}`}
             >
               {trackTitle}

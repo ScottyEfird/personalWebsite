@@ -16,7 +16,6 @@
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
     "curly": "error",
-    "linebreak-style": [2, "unix"],
     "semi": [2],
     "no-mixed-spaces-and-tabs": [0, "smart-tabs"],
     "no-unused-vars": [2, { "vars": "local" }],
