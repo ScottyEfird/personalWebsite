@@ -1,3 +1,11 @@
 .appBody {
   margin: 4% 8%;
 }
+
+.experienceCardsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+
+  margin: 4% 16%;
+}

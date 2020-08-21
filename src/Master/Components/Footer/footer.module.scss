@@ -1,0 +1,12 @@
+.footerWrapper {
+  text-align: center;
+
+  a {
+    color: unset;
+    text-decoration: unset;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

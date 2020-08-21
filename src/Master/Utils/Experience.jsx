@@ -3,7 +3,7 @@ const FULLSAIL = {
   jobTitle: "todo",
   location: "todo",
   dateToFrom: "todo",
-  logo: "todo",
+  logo: "fullsail.png",
   url: "todo",
   experianceData: ["todo"],
 };

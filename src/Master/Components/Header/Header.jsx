@@ -78,9 +78,22 @@ class Header extends Component {
         </div>
         <div className={styles.title}>Scott Efird</div>
         <div className={styles.contactInfo}>
-          <a href="mailto:scottyefird@gmail.com">Email</a> ·
-          <a href="https://github.com/ScottyEfird/personalWebsite"> GitHub</a> ·
-          <a href="https://www.linkedin.com/in/scottyefird/"> LinkedIn</a>
+          <a href="mailto:scottyefird@gmail.com">{"Email "}</a>·
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/ScottyEfird/personalWebsite"
+          >
+            {" GitHub "}
+          </a>
+          ·
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/scottyefird/"
+          >
+            {" LinkedIn"}
+          </a>
         </div>
         {trackLastPlayedTime && (
           <div>
