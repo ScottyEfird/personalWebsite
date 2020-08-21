@@ -59,5 +59,5 @@ ExperienceCard.propTypes = {
   dateToFrom: PropTypes.func,
   logo: PropTypes.func,
   url: PropTypes.func,
-  experianceData: PropTypes.arrayOf(PropTypes.string),
+  experienceData: PropTypes.arrayOf(PropTypes.string),
 };
