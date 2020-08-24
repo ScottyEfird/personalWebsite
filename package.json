@@ -1,6 +1,6 @@
 {
   "name": "scotty-efird-personal-website",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "private": false,
   "dependencies": {
     "react": "^16.8.6",
