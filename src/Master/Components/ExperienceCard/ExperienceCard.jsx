@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import styles from "./experienceCard.module.scss";
+import globalStyles from "../global.module.scss";
 
 const ExperienceCard = ({ toggleModal, logo, title, dateToFrom, url }) => (
   <div className={styles.cardWrapper}>
@@ -18,7 +19,9 @@ const ExperienceCard = ({ toggleModal, logo, title, dateToFrom, url }) => (
       <div className={styles.cardTitle}>{title}</div>
       <div className={styles.cardDate}>{dateToFrom}</div>
       <div className={styles.cardButton}>
-        <button onClick={() => toggleModal()}>More info</button>
+        <button className={globalStyles.button} onClick={() => toggleModal()}>
+          More info
+        </button>
       </div>
     </div>
   </div>
