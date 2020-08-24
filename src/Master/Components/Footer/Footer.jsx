@@ -7,7 +7,7 @@ const Footer = () => (
     {"View on "}
     <a
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       href="https://github.com/ScottyEfird/personalWebsite"
     >
       GitHub

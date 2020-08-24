@@ -81,7 +81,7 @@ class Header extends Component {
           <a href="mailto:scottyefird@gmail.com">{"Email "}</a>·
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://github.com/ScottyEfird/personalWebsite"
           >
             {" GitHub "}
@@ -89,7 +89,7 @@ class Header extends Component {
           ·
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/scottyefird/"
           >
             {" LinkedIn"}
@@ -100,7 +100,7 @@ class Header extends Component {
             {trackLastPlayedTime}
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href={`//www.youtube.com/results?search_query='${trackTitle} ${trackArtist}`}
             >
               {trackTitle}
