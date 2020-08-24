@@ -54,10 +54,10 @@ export default ExperienceCard;
 
 ExperienceCard.propTypes = {
   title: PropTypes.string,
-  jobTitle: PropTypes.func,
-  location: PropTypes.func,
-  dateToFrom: PropTypes.func,
-  logo: PropTypes.func,
-  url: PropTypes.func,
+  jobTitle: PropTypes.string,
+  location: PropTypes.string,
+  dateToFrom: PropTypes.string,
+  logo: PropTypes.string,
+  url: PropTypes.string,
   experienceData: PropTypes.arrayOf(PropTypes.string),
 };
