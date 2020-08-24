@@ -3,7 +3,7 @@ const FULLSAIL = {
   jobTitle: "Front End Software Engineer",
   location: "Orlando, FL",
   dateToFrom: "November 2019 - September 2020",
-  logo: "fullsail.png",
+  brand: "fullsail",
   url: "https://www.fullsail.edu/",
   experienceData: [
     "Contributed valuable front end code that impacted tens of thousands of users",
@@ -18,7 +18,7 @@ const RISKSENSE = {
   jobTitle: "Front End Software Engineer",
   location: "Albuquerque, NM",
   dateToFrom: "June 2018 - November 2019",
-  logo: "risksense.png",
+  brand: "risksense",
   url: "https://risksense.com/",
   experienceData: [
     "Embedded front end developer creating configurable integrations and dashboards",
@@ -34,7 +34,7 @@ const COOLFIRE = {
   jobTitle: "Front End Software Engineer",
   location: "St. Louis, MO",
   dateToFrom: "July 2016 - June 2018",
-  logo: "coolfire.png",
+  brand: "coolfire",
   url: "https://www.coolfiresolutions.com/",
   experienceData: [
     "Worked in creating dynamically updating user interfaces that displayed real time data",
@@ -50,7 +50,7 @@ const FRII = {
   jobTitle: "NOC Engineer - Intern",
   location: "Fort Collins, CO",
   dateToFrom: "Summer of 2015",
-  logo: "frii.png",
+  brand: "frii",
   url: "https://frii.com/",
   experienceData: [
     "Maintained and monitored the stability of an ISP fiber network in northern Colorado",

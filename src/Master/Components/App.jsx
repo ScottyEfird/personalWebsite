@@ -11,31 +11,32 @@ import styles from "./app.module.scss";
 
 class App extends Component {
   state = {
-    isModalOpen: false,
+    modalStatus: undefined,
   };
 
-  toggleModal = () => {
+  toggleModal = (brand) => {
     this.setState({
-      isModalOpen: !this.state.isModalOpen,
+      modalStatus: brand,
     });
   };
 
   render() {
-    const { isModalOpen } = this.state;
-
-    // https://www.digitalocean.com/community/tutorials/react-modal-component
+    const { modalStatus } = this.state;
 
     return (
       <div className={styles.appBody}>
         <Header />
-        <CardModal isModalOpen={isModalOpen} toggleModal={this.toggleModal} />
+
         <div className={styles.experienceCardsWrapper}>
           {EXPERIENCE.map((experience, index) => (
-            <ExperienceCard
-              key={index}
-              toggleModal={this.toggleModal}
-              {...experience}
-            />
+            <div key={index}>
+              <CardModal
+                modalStatus={modalStatus}
+                toggleModal={this.toggleModal}
+                {...experience}
+              />
+              <ExperienceCard toggleModal={this.toggleModal} {...experience} />
+            </div>
           ))}
         </div>
         <Footer />

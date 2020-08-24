@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 import styles from "./experienceCard.module.scss";
 import globalStyles from "../global.module.scss";
 
-const ExperienceCard = ({ toggleModal, logo, title, dateToFrom, url }) => (
+const ExperienceCard = ({ toggleModal, brand, title, dateToFrom, url }) => (
   <div className={styles.cardWrapper}>
     <div className={styles.cardImageWrapper}>
       <a href={url} target="_blank" rel="noopener noreferrer">
         <img
-          src={`${window.location.origin}/images/${logo}`}
+          src={`${window.location.origin}/images/${brand}.png`}
           height={150}
           alt={`Logo for ${title}`}
         />
@@ -18,11 +18,12 @@ const ExperienceCard = ({ toggleModal, logo, title, dateToFrom, url }) => (
     <div className={styles.cardContent}>
       <div className={styles.cardTitle}>{title}</div>
       <div className={styles.cardDate}>{dateToFrom}</div>
-      <div className={styles.cardButton}>
-        <button className={globalStyles.button} onClick={() => toggleModal()}>
-          More info
-        </button>
-      </div>
+      <button
+        className={globalStyles.button}
+        onClick={() => toggleModal(brand)}
+      >
+        More info
+      </button>
     </div>
   </div>
 );
@@ -35,7 +36,7 @@ ExperienceCard.propTypes = {
   jobTitle: PropTypes.string,
   location: PropTypes.string,
   dateToFrom: PropTypes.string,
-  logo: PropTypes.string,
+  brand: PropTypes.string,
   url: PropTypes.string,
   experienceData: PropTypes.arrayOf(PropTypes.string),
 };
