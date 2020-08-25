@@ -94,7 +94,14 @@ class Header extends Component {
             <a href="mailto:scottyefird@gmail.com">{"scottyefird@gmail.com"}</a>
           </div>
           <div className={styles.contactInfo}>
-            <a href="mailto:scottyefird@gmail.com">{"Resume"}</a> ·{" "}
+            <a
+              className="Link"
+              href={`${window.location.origin}/downloads/ScottyEfirdResume.pdf`}
+              download
+            >
+              {"Resume"}
+            </a>{" "}
+            ·{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"

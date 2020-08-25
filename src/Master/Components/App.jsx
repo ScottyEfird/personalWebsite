@@ -62,7 +62,7 @@ class App extends Component {
           <Header />
           <div className={styles.experienceCardsWrapper}>
             {EXPERIENCE.map((experience, index) => (
-              <div key={index}>
+              <div className={styles.experienceCard} key={index}>
                 <CardModal
                   modalStatus={modalStatus}
                   toggleModal={this.toggleModal}

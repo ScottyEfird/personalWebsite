@@ -7,15 +7,15 @@
   justify-content: space-evenly;
   flex-flow: row wrap;
 
-  // border-color: white;
-  // border-style: solid;
-  // border-width: 2px;
-
   margin: 4% 8%;
 }
 
+.experienceCard {
+  margin: 2%;
+}
+
 .vanta {
-  background: #7c9cff; //TODO
+  background: var(--secondaryBackground);
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
