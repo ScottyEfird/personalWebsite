@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from "react";
 import * as THREE from "three";
-import FOG from "vanta/dist/vanta.fog.min";
+import WAVES from "vanta/dist/vanta.waves.min";
 
 import EXPERIENCE from "../Utils/Experience.jsx";
 import Header from "./Header/Header.jsx";
@@ -28,18 +28,21 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.vantaEffect = FOG({
+    this.vantaEffect = WAVES({
       el: this.vantaRef.current,
       THREE: THREE,
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
       minHeight: 200.0,
       minWidth: 200.0,
-      highlightColor: 0xa0c18,
-      midtoneColor: 0xc0824,
-      lowlightColor: 0x45bef,
-      baseColor: 0x4260b8,
-      blurFactor: 0.61,
-      speed: 1.4,
-      zoom: 1.6,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x316b81,
+      shininess: 78.0,
+      waveHeight: 26.0,
+      waveSpeed: 0.45,
+      zoom: 0.95,
     });
   }
 
