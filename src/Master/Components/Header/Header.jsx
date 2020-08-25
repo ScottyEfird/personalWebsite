@@ -81,7 +81,10 @@ class Header extends Component {
               alt="Scotty Efird"
             />
           </div>
-          <div className={styles.title}>Scott Efird</div>
+          <div className={styles.title}>Hey, I&apos;m Scotty</div>
+          <div className={styles.subtitle}>
+            A Front End Engineer from Orlando
+          </div>
           <div className={styles.contactInfo}>
             <a href="mailto:scottyefird@gmail.com">{"Email "}</a>·
             <a
@@ -101,8 +104,13 @@ class Header extends Component {
             </a>
           </div>
           {trackLastPlayedTime && (
-            <div>
-              {trackLastPlayedTime}
+            <div className={styles.lastPlayed}>
+              <img
+                src={`${window.location.origin}/images/spotify.png`}
+                alt="Spotify logo"
+                height={25}
+              />
+              {trackLastPlayedTime}{" "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
