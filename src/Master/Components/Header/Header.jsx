@@ -85,8 +85,16 @@ class Header extends Component {
           <div className={styles.subtitle}>
             A Front End Engineer from Orlando
           </div>
+          <div className={styles.preface}>
+            I&apos;ve developed features for tens of thousands of customers, you
+            should shoot me an email so that we can provide value for your
+            users.
+          </div>
+          <div className={styles.email}>
+            <a href="mailto:scottyefird@gmail.com">{"scottyefird@gmail.com"}</a>
+          </div>
           <div className={styles.contactInfo}>
-            <a href="mailto:scottyefird@gmail.com">{"Email"}</a> ·{" "}
+            <a href="mailto:scottyefird@gmail.com">{"Resume"}</a> ·{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"

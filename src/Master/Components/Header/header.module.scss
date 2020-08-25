@@ -24,7 +24,7 @@
   padding-bottom: 1%;
 
   > * + * {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 }
 
@@ -32,21 +32,39 @@
   border-radius: 50%;
 }
 
+.title,
+.subtitle,
+.preface {
+  text-align: center;
+}
+
 .title {
-  font-size: 22pt;
+  font-size: 26pt;
   font-weight: 600;
 }
 
 .subtitle {
-  font-size: 16pt;
+  font-size: 20pt;
   font-weight: 500;
 
-  padding-bottom: 5%;
+  padding-bottom: 2%;
+}
+
+.preface,
+.email {
+  font-size: 15pt;
+}
+
+.preface {
+  padding-bottom: 2%;
+}
+
+.email {
+  padding-bottom: 8%;
 }
 
 .contactInfo {
   a {
-    color: unset;
     text-decoration: unset;
   }
 
