@@ -64,50 +64,56 @@ class Header extends Component {
   // }
 
   render() {
-    const { trackTitle, trackLastPlayedTime, trackArtist } = this.state;
+    // const { trackTitle, trackLastPlayedTime, trackArtist } = this.state;
+
+    const trackTitle = "fake one two three";
+    const trackLastPlayedTime = "An hour ago";
+    const trackArtist = "Jon Kelly";
 
     return (
       <div className={styles.headerWrapper}>
-        <div>
-          <img
-            className={styles.avatar}
-            src={`${window.location.origin}/images/headshot.jpg`}
-            height={150}
-            alt="Scotty Efird"
-          />
-        </div>
-        <div className={styles.title}>Scott Efird</div>
-        <div className={styles.contactInfo}>
-          <a href="mailto:scottyefird@gmail.com">{"Email "}</a>·
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/ScottyEfird/personalWebsite"
-          >
-            {" GitHub "}
-          </a>
-          ·
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/scottyefird/"
-          >
-            {" LinkedIn"}
-          </a>
-        </div>
-        {trackLastPlayedTime && (
+        <div className={styles.header}>
           <div>
-            {trackLastPlayedTime}
+            <img
+              className={styles.avatar}
+              src={`${window.location.origin}/images/headshot.jpg`}
+              height={150}
+              alt="Scotty Efird"
+            />
+          </div>
+          <div className={styles.title}>Scott Efird</div>
+          <div className={styles.contactInfo}>
+            <a href="mailto:scottyefird@gmail.com">{"Email "}</a>·
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={`//www.youtube.com/results?search_query='${trackTitle} ${trackArtist}`}
+              href="https://github.com/ScottyEfird/personalWebsite"
             >
-              {trackTitle}
-            </a>{" "}
-            by <i>{trackArtist}</i>
+              {" GitHub "}
+            </a>
+            ·
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/scottyefird/"
+            >
+              {" LinkedIn"}
+            </a>
           </div>
-        )}
+          {trackLastPlayedTime && (
+            <div>
+              {trackLastPlayedTime}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`//www.youtube.com/results?search_query='${trackTitle} ${trackArtist}`}
+              >
+                {trackTitle}
+              </a>{" "}
+              by <i>{trackArtist}</i>
+            </div>
+          )}
+        </div>
       </div>
     );
   }

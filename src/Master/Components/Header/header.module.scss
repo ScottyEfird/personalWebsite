@@ -1,9 +1,24 @@
 .headerWrapper {
-  background-color: salmon;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header {
+  color: var(--textColor);
+  background: var(--primaryBackground);
+  border-radius: var(--borderRadius);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 30%;
+  min-width: 400px;
+
+  padding: 2%;
 
   > * + * {
     margin-top: 8px;

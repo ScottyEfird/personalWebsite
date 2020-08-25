@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from "react";
 import * as THREE from "three";
-import BIRDS from "vanta/dist/vanta.birds.min";
+import FOG from "vanta/dist/vanta.fog.min";
 
 import EXPERIENCE from "../Utils/Experience.jsx";
 import Header from "./Header/Header.jsx";
@@ -28,9 +28,18 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.vantaEffect = BIRDS({
+    this.vantaEffect = FOG({
       el: this.vantaRef.current,
       THREE: THREE,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      highlightColor: 0xa0c18,
+      midtoneColor: 0xc0824,
+      lowlightColor: 0x45bef,
+      baseColor: 0x4260b8,
+      blurFactor: 0.61,
+      speed: 1.4,
+      zoom: 1.6,
     });
   }
 
