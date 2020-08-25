@@ -77,8 +77,11 @@
   display: flex;
   align-items: center;
 
+  > div {
+    text-align: center;
+  }
+
   > img {
     padding-right: 6px;
-    filter: grayscale(100%);
   }
 }
