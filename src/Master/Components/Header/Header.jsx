@@ -66,9 +66,9 @@ class Header extends Component {
   render() {
     // const { trackTitle, trackLastPlayedTime, trackArtist } = this.state;
 
-    const trackTitle = "fake one two three";
-    const trackLastPlayedTime = "An hour ago";
-    const trackArtist = "Jon Kelly";
+    const trackArtist = "Blaze Foley";
+    const trackLastPlayedTime = "20 minutess ago, I listened to ";
+    const trackTitle = "Big Cheeseburgers and Good Frenc";
 
     return (
       <div className={styles.headerWrapper}>
@@ -125,15 +125,18 @@ class Header extends Component {
                 alt="Spotify logo"
                 height={25}
               />
-              {trackLastPlayedTime}&nbsp;
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`//www.youtube.com/results?search_query='${trackTitle} ${trackArtist}`}
-              >
-                {trackTitle}
-              </a>
-              &nbsp;by&nbsp;<i>{trackArtist}</i>
+              <div>
+                {`${trackLastPlayedTime} `}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`//www.youtube.com/results?search_query='${trackTitle} ${trackArtist}`}
+                >
+                  {trackTitle}
+                </a>
+                {` by `}
+                <i>{trackArtist}</i>
+              </div>
             </div>
           )}
         </div>
