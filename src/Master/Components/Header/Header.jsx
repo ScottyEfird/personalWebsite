@@ -86,9 +86,9 @@ class Header extends Component {
             A Front End Engineer from Orlando
           </div>
           <div className={styles.preface}>
-            I&apos;ve developed features for tens of thousands of customers, you
-            should shoot me an email so that we can provide value for your
-            users.
+            I&apos;ve developed features for tens of thousands of users, you
+            should send an email so that together we can provide value for your
+            customers.
           </div>
           <div className={styles.email}>
             <a href="mailto:scottyefird@gmail.com">{"scottyefird@gmail.com"}</a>
