@@ -8,9 +8,24 @@
   background: var(--primaryBackground);
 
   margin: 4%;
-
   height: 400px;
   width: 400px;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease-in-out;
+
+  img {
+    transition: filter 0.4s ease-in-out;
+  }
+}
+
+.cardWrapper:hover {
+  background: var(--secondaryBackground);
+
+  img {
+    filter: unset;
+  }
 }
 
 .cardImageWrapper {
@@ -22,25 +37,16 @@
 
   margin: 8%;
 
-  // border-color: white;
-  // border-style: solid;
-  // border-width: 2px;
-
   img {
     width: 100%;
     height: auto;
 
     filter: grayscale(100%);
   }
-
-  img:hover {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: black;
-  }
 }
 
 .cardContent {
+  margin: 4%;
   text-align: center;
 
   .cardTitle {

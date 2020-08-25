@@ -1,7 +1,7 @@
 :root {
   --textColor: white;
   --primaryBackground: rgba(145, 0, 0, 0.4);
-  --secondaryBackground: #d33a2c;
+  --secondaryBackground: rgba(145, 50, 50, 0.2);
   --highlight: #d33a2c;
   --borderRadius: 8px;
 }
