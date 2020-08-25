@@ -86,21 +86,21 @@ class Header extends Component {
             A Front End Engineer from Orlando
           </div>
           <div className={styles.contactInfo}>
-            <a href="mailto:scottyefird@gmail.com">{"Email "}</a>·
+            <a href="mailto:scottyefird@gmail.com">{"Email"}</a> ·{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/ScottyEfird/personalWebsite"
             >
-              {" GitHub "}
-            </a>
-            ·
+              {"GitHub"}
+            </a>{" "}
+            ·{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/scottyefird/"
             >
-              {" LinkedIn"}
+              {"LinkedIn"}
             </a>
           </div>
           {trackLastPlayedTime && (
@@ -110,15 +110,15 @@ class Header extends Component {
                 alt="Spotify logo"
                 height={25}
               />
-              {trackLastPlayedTime}{" "}
+              {trackLastPlayedTime}&nbsp;
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`//www.youtube.com/results?search_query='${trackTitle} ${trackArtist}`}
               >
                 {trackTitle}
-              </a>{" "}
-              by <i>{trackArtist}</i>
+              </a>
+              &nbsp;by&nbsp;<i>{trackArtist}</i>
             </div>
           )}
         </div>
