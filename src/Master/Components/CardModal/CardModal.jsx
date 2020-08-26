@@ -11,10 +11,12 @@ const CardModal = ({
   brand,
   experience,
   jobTitle,
+  project,
 }) => {
   if (!modalStatus || modalStatus !== brand) {
     return null;
   }
+
   return (
     <div className={styles.pageWrapper} onClick={() => toggleModal()}>
       <div className={styles.modalWrapper} onClick={(e) => e.stopPropagation()}>
@@ -37,7 +39,8 @@ const CardModal = ({
           />
         </div>
         <div className={styles.modalBottom}>
-          <p>{experience}</p>
+          <div className={styles.subtitle}>{project}</div>
+          <div>{experience}</div>
         </div>
       </div>
     </div>
@@ -54,6 +57,7 @@ CardModal.propTypes = {
   location: PropTypes.string,
   dateToFrom: PropTypes.string,
   brand: PropTypes.string,
+  project: PropTypes.string,
   url: PropTypes.string,
   experience: PropTypes.string,
 };
