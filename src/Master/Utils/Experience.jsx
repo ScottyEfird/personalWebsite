@@ -21,7 +21,7 @@ const RISKSENSE = {
 };
 
 const COOLFIRE = {
-  title: "Coolfire",
+  title: "Coolfire Solutions",
   jobTitle: "Front End Software Engineer",
   location: "St. Louis, MO",
   dateToFrom: "July 2016 - June 2018",
@@ -32,7 +32,7 @@ const COOLFIRE = {
 };
 
 const FRII = {
-  title: "Frii",
+  title: "Front Range Internet Inc",
   jobTitle: "NOC Engineer - Intern",
   location: "Fort Collins, CO",
   dateToFrom: "Summer of 2015",

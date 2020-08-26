@@ -3,24 +3,38 @@ import PropTypes from "prop-types";
 
 import styles from "./cardModal.module.scss";
 
-const CardModal = ({ modalStatus, toggleModal, url, brand, experience }) => {
+const CardModal = ({
+  title,
+  modalStatus,
+  toggleModal,
+  url,
+  brand,
+  experience,
+  jobTitle,
+}) => {
   if (!modalStatus || modalStatus !== brand) {
     return null;
   }
   return (
     <div className={styles.pageWrapper} onClick={() => toggleModal()}>
       <div className={styles.modalWrapper} onClick={(e) => e.stopPropagation()}>
-        <div className={styles.closeModal} onClick={() => toggleModal()}>
-          X
-        </div>
         <div className={styles.modalTop}>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <img
-              className={styles.modalImage}
-              src={`${window.location.origin}/images/content/${brand}.png`}
-              alt="Project that I've worked on"
-            />
-          </a>
+          <div className={styles.title}>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+            {` - ${jobTitle}`}
+          </div>
+          <div className={styles.closeModal} onClick={() => toggleModal()}>
+            X
+          </div>
+        </div>
+        <div className={styles.modalMiddle}>
+          <img
+            className={styles.modalImage}
+            src={`${window.location.origin}/images/content/${brand}.png`}
+            alt="Project that I've worked on"
+          />
         </div>
         <div className={styles.modalBottom}>
           <p>{experience}</p>
