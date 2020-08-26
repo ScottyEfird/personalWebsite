@@ -40,8 +40,3 @@ $ npm run deploy
 - Use `now domains ls` to check domain for usable domain names.
 - You might need to `move` the domain to your GitHub account.
 - `['scottyefird.com']`
-
-<!-- todo -->
-<!-- https://github.com/tengbao/vanta
-https://www.tannerkrewson.com/
-https://www.vantajs.com/?effect=fog#(backgroundAlpha:1,baseColor:16772075,blurFactor:0.6,gyroControls:!f,highlightColor:7497802,lowlightColor:5130600,midtoneColor:14832447,minHeight:200,minWidth:200,mouseControls:!t,scale:2,scaleMobile:4,speed:1,touchControls:!t,zoom:1) -->

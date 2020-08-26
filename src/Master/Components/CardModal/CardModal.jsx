@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import styles from "./cardModal.module.scss";
 import globalStyles from "../global.module.scss";
 
-const CardModal = ({ modalStatus, toggleModal, brand }) => {
+const CardModal = ({ modalStatus, toggleModal, brand, experience }) => {
   if (!modalStatus || modalStatus !== brand) {
     return null;
   }
@@ -19,15 +19,7 @@ const CardModal = ({ modalStatus, toggleModal, brand }) => {
             />
           </div>
           <div className={styles.contentTextInformation}>
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            <div>{experience}</div>
             <button
               className={globalStyles.button}
               onClick={() => toggleModal(undefined)}
@@ -52,5 +44,5 @@ CardModal.propTypes = {
   dateToFrom: PropTypes.string,
   brand: PropTypes.string,
   url: PropTypes.string,
-  experienceData: PropTypes.arrayOf(PropTypes.string),
+  experienceData: PropTypes.string,
 };

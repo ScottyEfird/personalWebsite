@@ -5,12 +5,8 @@ const FULLSAIL = {
   dateToFrom: "November 2019 - September 2020",
   brand: "fullsail",
   url: "https://www.fullsail.edu/",
-  experienceData: [
-    "Contributed valuable front end code that impacted tens of thousands of users",
-    "Worked with a with a highly experienced team to provide updates and improvements to the user experience",
-    "Strong focus on mobile first design and creating layouts that worked at any screen size",
-    "Assisted in a major version change involving refactoring thousands of lines of code",
-  ],
+  experience:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
 };
 
 const RISKSENSE = {
@@ -20,13 +16,8 @@ const RISKSENSE = {
   dateToFrom: "June 2018 - November 2019",
   brand: "risksense",
   url: "https://risksense.com/",
-  experienceData: [
-    "Embedded front end developer creating configurable integrations and dashboards",
-    "Helped lead the onboarding and training of an offshore front end development team",
-    "Predominately worked with large data sets containing 100k+ entities per table",
-    "Strong teamwork and communication skills used to meet highly technical specifications",
-    "Responsible for the planning, architecting and delivering of software",
-  ],
+  experience:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
 };
 
 const COOLFIRE = {
@@ -36,13 +27,8 @@ const COOLFIRE = {
   dateToFrom: "July 2016 - June 2018",
   brand: "coolfire",
   url: "https://www.coolfiresolutions.com/",
-  experienceData: [
-    "Worked in creating dynamically updating user interfaces that displayed real time data",
-    "Utilized Socket.IO data streams to provide instant updates to the web app",
-    "Helped create a real time inventory and personnel tracking webapp",
-    "Developed in the MERN stack (MongoDB, ExpressJs, NodeJs, Babel and Webpack)",
-    "Utilized popular packages including: React-Router, React-Redux, Styled-Components and Redux-Saga",
-  ],
+  experience:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
 };
 
 const FRII = {
@@ -52,11 +38,8 @@ const FRII = {
   dateToFrom: "Summer of 2015",
   brand: "frii",
   url: "https://frii.com/",
-  experienceData: [
-    "Maintained and monitored the stability of an ISP fiber network in northern Colorado",
-    "Solved tickets involving everything from web server maintenance to installing data center hardware",
-    "Worked with a wide range of hardware including Cambium Networks, Ruckus and Ubiquiti APs",
-  ],
+  experience:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
 };
 
 const EXPERIENCE = [FULLSAIL, RISKSENSE, COOLFIRE, FRII];
