@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import styles from "./cardModal.module.scss";
 
-const CardModal = ({ modalStatus, toggleModal, brand, experience }) => {
+const CardModal = ({ modalStatus, toggleModal, url, brand, experience }) => {
   if (!modalStatus || modalStatus !== brand) {
     return null;
   }
@@ -14,10 +14,13 @@ const CardModal = ({ modalStatus, toggleModal, brand, experience }) => {
           X
         </div>
         <div className={styles.modalTop}>
-          <img
-            src={`${window.location.origin}/images/content/${brand}.png`}
-            alt="Project that I've worked on"
-          />
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <img
+              className={styles.modalImage}
+              src={`${window.location.origin}/images/content/${brand}.png`}
+              alt="Project that I've worked on"
+            />
+          </a>
         </div>
         <div className={styles.modalBottom}>
           <p>{experience}</p>

@@ -22,7 +22,7 @@
   max-width: 960px;
   max-height: 70%;
 
-  background-color: #558a9d;
+  background-color: #446e7d;
   border-radius: 4px;
   z-index: 3;
 }
@@ -55,12 +55,19 @@
 
   margin-top: 8%;
 
-  > img {
-    height: 80%;
-    width: auto;
-
-    overflow: auto;
+  > a {
+    display: flex;
+    justify-content: center;
   }
+}
+
+.modalImage {
+  height: 80%;
+  width: auto;
+
+  overflow: auto;
+
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
