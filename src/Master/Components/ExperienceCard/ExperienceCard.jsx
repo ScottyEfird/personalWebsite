@@ -28,5 +28,5 @@ ExperienceCard.propTypes = {
   dateToFrom: PropTypes.string,
   brand: PropTypes.string,
   url: PropTypes.string,
-  experienceData: PropTypes.string,
+  experience: PropTypes.string,
 };

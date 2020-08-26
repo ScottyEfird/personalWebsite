@@ -1,14 +1,15 @@
 :root {
   --textColor: white;
-  --primaryBackground: rgba(6, 30, 51, 0.5);
-  --secondaryBackground: rgba(1, 3, 5, 0.2);
-  --highlight: #d33a2c;
+  --primaryBackground: rgba(6, 30, 51, 0.5); /* #061e33 */
+  --secondaryBackground: rgba(1, 3, 5, 0.2); /* #010305 */
   --borderRadius: 8px;
 }
 
 body {
   margin: 0;
   padding: 0;
+
+  color: var(--textColor);
 
   font-family: CircularStd, sans-serif;
   -webkit-font-smoothing: antialiased;

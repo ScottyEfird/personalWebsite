@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import styles from "./cardModal.module.scss";
-import globalStyles from "../global.module.scss";
 
 const CardModal = ({ modalStatus, toggleModal, brand, experience }) => {
   if (!modalStatus || modalStatus !== brand) {
@@ -11,22 +10,17 @@ const CardModal = ({ modalStatus, toggleModal, brand, experience }) => {
   return (
     <div className={styles.pageWrapper} onClick={() => toggleModal()}>
       <div className={styles.modalWrapper} onClick={(e) => e.stopPropagation()}>
-        <div className={styles.modalContent}>
-          <div className={styles.contentImage}>
-            <img
-              src={`${window.location.origin}/images/content/${brand}.png`}
-              alt="Project that I've worked on"
-            />
-          </div>
-          <div className={styles.contentTextInformation}>
-            <div>{experience}</div>
-            <button
-              className={globalStyles.button}
-              onClick={() => toggleModal(undefined)}
-            >
-              Close
-            </button>
-          </div>
+        <div className={styles.closeModal} onClick={() => toggleModal()}>
+          X
+        </div>
+        <div className={styles.modalTop}>
+          <img
+            src={`${window.location.origin}/images/content/${brand}.png`}
+            alt="Project that I've worked on"
+          />
+        </div>
+        <div className={styles.modalBottom}>
+          <p>{experience}</p>
         </div>
       </div>
     </div>
@@ -44,5 +38,5 @@ CardModal.propTypes = {
   dateToFrom: PropTypes.string,
   brand: PropTypes.string,
   url: PropTypes.string,
-  experienceData: PropTypes.string,
+  experience: PropTypes.string,
 };
