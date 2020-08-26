@@ -36,7 +36,7 @@ const COOLFIRE = {
 
 const FRII = {
   title: "Front Range Internet Inc",
-  jobTitle: "NOC Engineer - Intern",
+  jobTitle: "NOC Engineer Intern",
   location: "Fort Collins, CO",
   dateToFrom: "Summer of 2015",
   brand: "frii",
