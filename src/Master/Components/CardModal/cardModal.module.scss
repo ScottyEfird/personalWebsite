@@ -54,10 +54,6 @@
 }
 
 .title {
-  // border-style: solid;
-  // border-color: white;
-  // border-width: 2px;
-
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -95,6 +91,8 @@
 .modalImage {
   height: 80%;
   width: auto;
+
+  overflow: hidden;
 
   filter: drop-shadow(0px 10px 6px #3d545d);
 }
