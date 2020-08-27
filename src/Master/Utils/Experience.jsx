@@ -21,7 +21,7 @@ const RISKSENSE = {
   url: "https://risksense.com/",
   project: "RiskSense Smart Integration Framework",
   experience:
-    "Working as an embedded front end developer I created a dynamically configurable interface that allowed users to create and set up third party integrations with our web app. With a major focus on communication and teamwork, I helped in the onboarding with an offshore front end development team. Building high impact dashboards that pulled in hundreds of thousands of entities was a fun and exciting challenge that ended up being a valuable feature for the customers.",
+    "Working as an embedded front end developer, I created a dynamically configurable interface that allowed users to create and set up third party integrations with our web app. With a major focus on communication and teamwork, I helped in the onboarding with an offshore front end development team. Building high impact dashboards that pulled in hundreds of thousands of entities was a fun and exciting challenge that ended up being a valuable feature for the customers.",
 };
 
 const COOLFIRE = {
@@ -34,7 +34,7 @@ const COOLFIRE = {
   url: "https://www.coolfiresolutions.com/",
   project: "Coolfire Core",
   experience:
-    "Working at Coofire inundated me with excited development problems that led to valuable features being created for the customers. We utilized real time socket IO data, Leaflet mapping and React to provide a fully dynamic dashboard that showed the locations and status of users in real time. I also participated in creating a standalone web app that allowed customers to automated workflows.",
+    "I helped create a webapp that utilized real time socket IO data, Leaflet mapping and React to provide a fully dynamic dashboard that showed the locations and status of users in real time. We created the user interface that allowed customers access to valuable information in a seamless manner. I also participated in creating a standalone web app that allowed customers to automate workflows.",
 };
 
 const FRII = {
