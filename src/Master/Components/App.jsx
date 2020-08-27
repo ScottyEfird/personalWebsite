@@ -41,7 +41,7 @@ class App extends Component {
       color: 0x316b81,
       shininess: 78.0,
       waveHeight: 26.0,
-      waveSpeed: 0.45,
+      waveSpeed: 0.3,
       zoom: 0.95,
     });
   }
