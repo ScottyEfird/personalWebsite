@@ -4,6 +4,7 @@ const FULLSAIL = {
   location: "Orlando, FL",
   dateToFrom: "November 2019 - September 2020",
   brand: "fullsail",
+  contentImage: "fullsail.png",
   url: "https://www.fullsail.edu/",
   project: "Full Sail Online",
   experience:
@@ -16,6 +17,7 @@ const RISKSENSE = {
   location: "Albuquerque, NM",
   dateToFrom: "June 2018 - November 2019",
   brand: "risksense",
+  contentImage: "risksense.png",
   url: "https://risksense.com/",
   project: "RiskSense Smart Integration Framework",
   experience:
@@ -28,6 +30,7 @@ const COOLFIRE = {
   location: "St. Louis, MO",
   dateToFrom: "July 2016 - June 2018",
   brand: "coolfire",
+  contentImage: "coolfire.png",
   url: "https://www.coolfiresolutions.com/",
   project: "Coolfire Core",
   experience:
@@ -40,11 +43,25 @@ const FRII = {
   location: "Fort Collins, CO",
   dateToFrom: "Summer of 2015",
   brand: "frii",
+  contentImage: "frii.png",
   url: "https://frii.com/",
   project: "Network Operations and Datacenter Colocation",
   experience:
     "My internship at FRII exposed me to a wide range of technology and helped teach vital skills. Working on tickets that ranged from physical hardware installation onsite to writing simple bash scripts that automate common tasks. Working with customers taught me valuable communication and problem solving skills.",
 };
 
-const EXPERIENCE = [FULLSAIL, RISKSENSE, COOLFIRE, FRII];
+const NOTES = {
+  title: "Note Taking React App",
+  jobTitle: "Personal Coding Project",
+  location: "",
+  dateToFrom: "Summer of 2019",
+  brand: "notes",
+  contentImage: "notes.gif",
+  url: "https://github.com/ScottyEfird/Notes",
+  project: "24hr coding challenge",
+  experience:
+    "This was an exciting project that I created in 24hrs to test my dynamic layout and user interface building skills. It allows users to create, edit and delete notes all while providing a clean interface for you to use.",
+};
+
+const EXPERIENCE = [FULLSAIL, RISKSENSE, COOLFIRE, FRII, NOTES];
 export default EXPERIENCE;

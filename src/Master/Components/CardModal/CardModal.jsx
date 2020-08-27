@@ -12,6 +12,7 @@ const CardModal = ({
   experience,
   jobTitle,
   project,
+  contentImage,
 }) => {
   if (!modalStatus || modalStatus !== brand) {
     return null;
@@ -34,7 +35,7 @@ const CardModal = ({
         <div className={styles.modalMiddle}>
           <img
             className={styles.modalImage}
-            src={`${window.location.origin}/images/content/${brand}.png`}
+            src={`${window.location.origin}/images/content/${contentImage}`}
             alt="Project that I've worked on"
           />
         </div>
@@ -57,6 +58,7 @@ CardModal.propTypes = {
   location: PropTypes.string,
   dateToFrom: PropTypes.string,
   brand: PropTypes.string,
+  contentImage: PropTypes.string,
   project: PropTypes.string,
   url: PropTypes.string,
   experience: PropTypes.string,

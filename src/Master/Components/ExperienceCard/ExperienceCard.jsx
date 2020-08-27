@@ -27,6 +27,7 @@ ExperienceCard.propTypes = {
   location: PropTypes.string,
   dateToFrom: PropTypes.string,
   brand: PropTypes.string,
+  contentImage: PropTypes.string,
   url: PropTypes.string,
   project: PropTypes.string,
   experience: PropTypes.string,
